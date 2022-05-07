@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/game.css">
+    <link href="https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@6/fonts/Anuphan/Anuphan.css" rel="stylesheet" />
+    <title>Game</title>
+</head>
+
+<body onload="startTime()">
+    <nav>
+        <!--nav.-->
+        <div class="nav1">
+            <!-- hamburger active -->
+            <input type="checkbox" id="nav-check">
+            <!--header-->
+            <div class="nav-header">
+                <div class="nav-title">
+                    Personal Website Project
+                </div>
+            </div>
+            <!-- hamburger button -->
+            <div class="nav-btn">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <!--Links-->
+            <div class="nav-links">
+                <a href="home.html">Home</a>
+                <a href="game.html">Game</a>
+                <a href="about-me.html">About Me</a>
+            </div>
+        </div>
+    </nav>
+    <!--Date time-->
+    <div id="date"></div>
+    <main class="background">
+        <!--structure tic-tac-toe-->
+        <!--Title of tic tac toe-->
+        <section class="title">
+            <h1>Tic Tac Toe</h1>
+        </section>
+        <!--Turn Player-->
+        <section class="display">
+            Player <span class="display-player playerX">X</span>'s turn
+        </section>
+        <!--structure tic-tac-toe-->
+        <section class="container">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+        </section>
+        <section class="display announcer hide"></section>
+        <!--button reset-->
+        <section class="controls">
+            <button id="reset">Reset</button>
+        </section>
+    </main>
+    <script src="/script/game.js"></script>
+</body>
+</html>
